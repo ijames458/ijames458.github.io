@@ -15,9 +15,9 @@
 
             setInterval(numIncrease, 50);
 
-            function numIncrease(){
-                if(counter == 0) {
-                    if(pbar1width < 100) {
+            function numIncrease() {
+                if (counter == 0) {
+                    if (pbar1width < 100) {
                         statcycle();
                         pbar1width += 1;
                     } else {
@@ -25,8 +25,8 @@
                     }
                 }
 
-                if(counter == 1) {
-                    if(pbar2width < 100) {
+                if (counter == 1) {
+                    if (pbar2width < 100) {
                         statcycle();
                         pbar2width += 1;
                     } else {
@@ -34,8 +34,8 @@
                     }
                 }
 
-                if(counter == 2) {
-                    if(pbar3width < 100) {
+                if (counter == 2) {
+                    if (pbar3width < 100) {
                         statcycle();
                         pbar3width += 1;
                     } else {
@@ -43,8 +43,8 @@
                     }
                 }
 
-                if(counter == 3) {
-                    if(pbar4width < 100) {
+                if (counter == 3) {
+                    if (pbar4width < 100) {
                         statcycle();
                         pbar4width += 1;
                     } else {
@@ -69,8 +69,8 @@
             $('#stats').click(statcountinc);
 
             $('.dropdown-content').hide();
-            $('#link2').on('click', function(){
-                if($('#link2').hasClass('pressed')){
+            $('#link2').on('click', function () {
+                if ($('#link2').hasClass('pressed')) {
                     $('.dropdown-content').hide();
                     $('#link2').removeClass('pressed');
                 } else {
@@ -79,11 +79,11 @@
                 }
             });
 
-            $('#topnavigation').on('mouseleave', function(){
+            $('#topnavigation').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
-            $('.dropdown-content').on('mouseleave', function(){
+            $('.dropdown-content').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
@@ -91,15 +91,15 @@
             function statcountinc() {
                 console.log(counter);
 
-                if(counter == 0) {
+                if (counter == 0) {
                     pbar1width = 100;
                 }
 
-                if(counter == 1) {
+                if (counter == 1) {
                     pbar2width = 100;
                 }
 
-                if(counter == 2) {
+                if (counter == 2) {
                     pbar3width = 100;
                 }
 
@@ -143,13 +143,13 @@
 
             $("#downclick").on('click', 'a[href^="#"]', function (event) {
                 event.preventDefault();
-                $('html, body').animate({scrollTop: ($($.attr(this, 'href')).offset().top)-70}, 500);
+                $('html, body').animate({ scrollTop: ($($.attr(this, 'href')).offset().top) - 70 }, 500);
                 $("#downclick a").text("About Me");
             });
 
-            $(document).on('scroll', function(){
+            $(document).on('scroll', function () {
                 let scroll = $(document.body).scrollTop();
-                if(scroll == 0) {
+                if (scroll == 0) {
                     $("#downclick a").text("V");
                 } else {
                     $("#downclick a").text("About Me");
@@ -168,9 +168,11 @@
                 <li class="navitem"><a id="link" href="other-stuff.html">Other Stuff</a></li>
                 <li class="navitem" id="dropdown"><a id="link2">Contact</a>
                     <div class="dropdown-content">
-                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/" target="_blank">LinkedIn</a>
+                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/"
+                            target="_blank">LinkedIn</a>
                         <a class="dropdown-links" href="https://github.com/IsaacJ46591168" target="_blank">GitHub</a>
-                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social" target="_blank">Bluesky</a>
+                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social"
+                            target="_blank">Bluesky</a>
                         <a class="dropdown-links" href="mailto:isaacjames4580@gmail.com?Subject=Hello%20User">Email</a>
                     </div>
                 </li>
@@ -189,7 +191,7 @@
                     in
                     programming, level design and narrative design.</p>
                 <p class="regtext">Check out some of my stuff, or contact me if you want to chat!</p>
-                <p class="regtext" id="lastupdated">Last Updated: 8/08/2025</p>
+                <p class="regtext" id="lastupdated">Last Updated: 14/11/2025</p>
                 <div id="anchor"></div>
             </div>
         </section>
@@ -199,7 +201,8 @@
         <section class="container" id="aboutcontainer">
             <div class="aflxi" id="aboutmetext">
                 <p class="regtext">Hi, I'm Isaac James!</p>
-                <p class="regtext">I'm a Junior Games Designer and Developer from Liverpool, UK and am currently designing and developing projects for the Sydney-based L
+                <p class="regtext">I'm a Junior Games Designer and Developer from Liverpool, UK and am currently
+                    designing and developing projects for the Sydney-based L
                     Stands for Winner Studio! </p>
                 <p class="regtext">As a massive nerd, creative genius, or both at times, I've always enjoyed making my
                     own
@@ -243,7 +246,7 @@
                     <div id="statitemtext">
                         <h2>Favourite Football Team:</h2>
                         <p>Liverpool FC</p>
-                        <p>...was it not obvious?</p>
+                        <p>20 Times!</p>
                     </div>
                 </div>
 
@@ -268,33 +271,26 @@
                     <div id="SItem">
                         <div id="SItemtext">
                             <h2>Programs:</h2>
-                            <p class="regtext">- <b>Unity:</b> 4 years of consistent experience at an intermediate
+                            <p class="regtext">- <b>Unity:</b> 4 years of experience at a graduate
                                 level,
                                 creating major university projects, company commissions and various game-jams. </p>
-                            <p class="regtext">- <b>Blender:</b> 3 years of on-and-off experience at a basic/low-intermediate
+                            <p class="regtext">- <b>Blender:</b> 3 years of on-and-off experience at a
+                                basic/low-intermediate
                                 level,
                                 creating both low-poly and moderately-detailed 3D models for afformentioned game-jams,
                                 personal
                                 projects and general past-time.</p>
-                            <p class="regtext">- <b>Final Cut Pro: </b> 2 years of experience at an intermediate level,
-                                producing video content for personal projects as well as projects for educational
-                                institutions.
-                            </p>
                         </div>
                     </div>
 
                     <div id="SItem">
                         <div id="SItemtext">
                             <h2>Languages:</h2>
-                            <p class="regtext">- <b>C#:</b> 4 years of consistent experience at an intermediate level
+                            <p class="regtext">- <b>C#:</b> 4 years of experience at a graduate level
                                 via
                                 the
                                 usage of Unity, using the language to construct those projects and commissions.</p>
-                            <p class="regtext">- <b>Java: </b>2 years of on-and-off experience at a
-                                beginner/intermediate
-                                level
-                                via numerous university projects and exercises.</p>
-                            <p class="regtext">- <b>HTML/CSS/JQuery</b>: 3 years of experience at a Junior level for
+                            <p class="regtext">- <b>HTML/CSS/JS</b>: 3 years of experience at a Junior level for
                                 personal
                                 projects and University work.</p>
                         </div>
