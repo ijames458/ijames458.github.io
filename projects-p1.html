@@ -7,8 +7,8 @@
     <script>
         $(document).ready(function () {
             $('.dropdown-content').hide();
-            $('#link2').on('click', function(){
-                if($('#link2').hasClass('pressed')){
+            $('#link2').on('click', function () {
+                if ($('#link2').hasClass('pressed')) {
                     $('.dropdown-content').hide();
                     $('#link2').removeClass('pressed');
                 } else {
@@ -17,15 +17,15 @@
                 }
             });
 
-            $('#topnavigation').on('mouseleave', function(){
+            $('#topnavigation').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
-            $('.dropdown-content').on('mouseleave', function(){
+            $('.dropdown-content').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
-            
+
             $("#p1img").click(function () {
                 window.location = "projects-p1.html";
             })
@@ -46,8 +46,8 @@
                 window.open("https://lstandsforwinner.studio/", '_blank');
             });
 
-            $(window).on('resize', function(){
-                if($(window).width() > 768){
+            $(window).on('resize', function () {
+                if ($(window).width() > 768) {
                     msize = $(".cmedia").height();
                     $(".contribution-text").css("max-height", msize);
                 } else {
@@ -67,9 +67,11 @@
                 <li class="navitem"><a id="link" href="other-stuff.html">Other Stuff</a></li>
                 <li class="navitem" id="dropdown"><a id="link2">Contact</a>
                     <div class="dropdown-content">
-                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/" target="_blank">LinkedIn</a>
-                        <a class="dropdown-links" href="https://github.com/IsaacJ46591168" target="_blank">GitHub</a>
-                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social" target="_blank">Bluesky</a>
+                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/"
+                            target="_blank">LinkedIn</a>
+                        <a class="dropdown-links" href="https://github.com/ijames458" target="_blank">GitHub</a>
+                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social"
+                            target="_blank">Bluesky</a>
                         <a class="dropdown-links" href="mailto:isaacjames4580@gmail.com?Subject=Hello%20User">Email</a>
                     </div>
                 </li>
@@ -120,120 +122,126 @@
             </div>
         </section>
 
-            <section id="projectdescription">
-                <ul id="pdlist">
-                    <li id="projectheader" class="plistitem">
-                        <div id="pdcontainer">
-                            <div class="studiotag">
-                                <div class="studioimg" id="lswtag" title="L Stands for Winner Studio's Website"><img id="lswlogo" src="images/LSW-Logo.png" alt="L Stands for Winner Studio's Logo"></div>
-                            </div>
-                            <div id="projectdetails">
-                                <h2>Phoenix One</h2>
-                                <h3>Developed with: L Stands for Winner</h3>
-                                <h3>Demo Available: 2023</h3>
-                                <h3><a href="https://lstandsforwinner.itch.io/phoenix-one-demo" target="_blank" title="Play the game here!">Play it here!</a></h3>
-                            </div>
-                            <div id="projectoutline">
-                                <p class="regtext">A 2D Run-and-Gun Game combining puzzle, quick thinking and action.</p>
-                                <p class="regtext">Run, Jump, Glide, Dash and Shoot your way through numerous puzzling and high-octane
-                                    alien encounters, as you rush to salvage the fate of the Phoenix One mission and
-                                    preserve hope for humanity.</p>
+        <section id="projectdescription">
+            <ul id="pdlist">
+                <li id="projectheader" class="plistitem">
+                    <div id="pdcontainer">
+                        <div class="studiotag">
+                            <div class="studioimg" id="lswtag" title="L Stands for Winner Studio's Website"><img
+                                    id="lswlogo" src="images/LSW-Logo.png" alt="L Stands for Winner Studio's Logo">
                             </div>
                         </div>
-                    </li>
+                        <div id="projectdetails">
+                            <h2>Phoenix One</h2>
+                            <h3>Developed with: L Stands for Winner</h3>
+                            <h3>Demo Available: 2023</h3>
+                            <h3><a href="https://lstandsforwinner.itch.io/phoenix-one-demo" target="_blank"
+                                    title="Play the game here!">Play it here!</a></h3>
+                        </div>
+                        <div id="projectoutline">
+                            <p class="regtext">A 2D Run-and-Gun Game combining puzzle, quick thinking and action.</p>
+                            <p class="regtext">Run, Jump, Glide, Dash and Shoot your way through numerous puzzling and
+                                high-octane
+                                alien encounters, as you rush to salvage the fate of the Phoenix One mission and
+                                preserve hope for humanity.</p>
+                        </div>
+                    </div>
+                </li>
 
-                    <li id="projectroles" class="plistitem">
-                        <h2>My Responsibilities</h2>
-                        <div id="prcontainer">
-                            <div id="r1" class="roles">
-                                <h3 id="roletitle">Movement Designer and Developer</h3>
-                                <div id="rolestext" class="regtext">
-                                    <p>I was responsible for designing and developing the movement system for the
-                                        character,
-                                        which
-                                        involved brainstorming with teammates, writing design documentation, developing
-                                        the
-                                        movement
-                                        code and conducting playtests for each part of the movement.</p>
-                                </div>
-                            </div>
-                            <div id="r2" class="roles">
-                                <h3 id="roletitle">Level Designer</h3>
-                                <div id="rolestext" class="regtext">
-                                    <p>I was also responsible for crafting many of the levels, which required
-                                        brainstorming and
-                                        creating design documentation for level design philosophies, thematics,
-                                        difficulty, as
-                                        well
-                                        as creating the levels themselves and adjusting them based on playtester
-                                        feedback that I
-                                        recieved.</p>
-                                </div>
+                <li id="projectroles" class="plistitem">
+                    <h2>My Responsibilities</h2>
+                    <div id="prcontainer">
+                        <div id="r1" class="roles">
+                            <h3 id="roletitle">Movement Designer and Developer</h3>
+                            <div id="rolestext" class="regtext">
+                                <p>I was responsible for designing and developing the movement system for the
+                                    character,
+                                    which
+                                    involved brainstorming with teammates, writing design documentation, developing
+                                    the
+                                    movement
+                                    code and conducting playtests for each part of the movement.</p>
                             </div>
                         </div>
-                    </li>
+                        <div id="r2" class="roles">
+                            <h3 id="roletitle">Level Designer</h3>
+                            <div id="rolestext" class="regtext">
+                                <p>I was also responsible for crafting many of the levels, which required
+                                    brainstorming and
+                                    creating design documentation for level design philosophies, thematics,
+                                    difficulty, as
+                                    well
+                                    as creating the levels themselves and adjusting them based on playtester
+                                    feedback that I
+                                    recieved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-                    <li id="projectcontributions" class="plistitem">
-                        <h2>My Contributions</h2>
-                        <div id="pccontainer">
-                            <div id="contribution-text">
-                                <h3>Fast and Precise Movement</h3>
-                                <p class="regtext">One of our key design principles for Phoenix One was for the
-                                    movement to feel
-                                    fast, fluid and crisp to ensure that the pace of the game was quick and to
-                                    encourage speedrunning. </p>
-                                <p class="regtext">To create this, I made sure elements of the movement felt
-                                    precise and
-                                    responsive,
-                                    such as the left-right movement having very little acceleration and
-                                    decelleration times to allow for quick direction changes, and little-to-no
-                                    end-lag being implemented on the character's moveset so multiple movement
-                                    options could be chained together for a more fluid feel.</p>
-                                <hr>
-                                <h3>In-depth, intuitive and fluent levels</h3>
-                                <p class="regtext">To ensure that the game felt both fast-paced and
-                                    puzzling/challenging, I spent a great deal of time designing, revising and implementing levels to ensure
-                                    that they had the correct feel.</p>
-                                <p class="regtext">When designing the levels, rather than plan a whole layout
-                                    first, I designed them encounter by encounter, resulting in a variety of different challenges for
-                                    the player in one level, whilst also keeping to the same theme and difficulty.
-                                    This helped to create a cohesive and engaging level, of whose elements gelled
-                                    welltogether.</p>
-                                <hr>
-                                <h3>Engaging and exciting narrative</h3>
-                                <p class="regtext">A large part of the narrative of Phoenix One lies in the
-                                    narrative
-                                    collectibles
-                                    that lie around on each level, which include captain logs, research journals
-                                    and
-                                    miscellaneous findings.</p>
-                                <p class="regtext">In the collectible narrative pieces, I made sure to
-                                    accentuate each
-                                    character's
-                                    personality, quirks and mannerisms and convey the relationship they had with
-                                    other major characters or events in the plotline through their eyes, such as
-                                    Dr
-                                    Aspen being very inquisitive, committed, yet slightly more reserved and
-                                    quiet
-                                    when compared to the bold, confident leader that is the Captain. With the
-                                    miscellaneous, I elected for the direction of making them world-building
-                                    material to create a stronger image for the player of how life was like
-                                    onboard
-                                    the Phoenix One for the rest of the crew. </p>
-                                    <hr>
-                            </div>
-                            <div id="contribution-media">
-                                <video src="video/P1 movement demo vid.webm" controls autoplay loop
-                                    muted class="cmedia">Your browser does not support the video tag</video>
-                                <video src="video/P1 levels demo video.webm" controls autoplay loop
-                                    muted class="cmedia">Your browser does not support the video tag</video>
-                                <video src="video/P1 Narrative demo .webm" controls autoplay loop 
-                                    muted class="cmedia">Your browser does not support the video tag</video>
-                            </div>
+                <li id="projectcontributions" class="plistitem">
+                    <h2>My Contributions</h2>
+                    <div id="pccontainer">
+                        <div id="contribution-text">
+                            <h3>Fast and Precise Movement</h3>
+                            <p class="regtext">One of our key design principles for Phoenix One was for the
+                                movement to feel
+                                fast, fluid and crisp to ensure that the pace of the game was quick and to
+                                encourage speedrunning. </p>
+                            <p class="regtext">To create this, I made sure elements of the movement felt
+                                precise and
+                                responsive,
+                                such as the left-right movement having very little acceleration and
+                                decelleration times to allow for quick direction changes, and little-to-no
+                                end-lag being implemented on the character's moveset so multiple movement
+                                options could be chained together for a more fluid feel.</p>
+                            <hr>
+                            <h3>In-depth, intuitive and fluent levels</h3>
+                            <p class="regtext">To ensure that the game felt both fast-paced and
+                                puzzling/challenging, I spent a great deal of time designing, revising and implementing
+                                levels to ensure
+                                that they had the correct feel.</p>
+                            <p class="regtext">When designing the levels, rather than plan a whole layout
+                                first, I designed them encounter by encounter, resulting in a variety of different
+                                challenges for
+                                the player in one level, whilst also keeping to the same theme and difficulty.
+                                This helped to create a cohesive and engaging level, of whose elements gelled
+                                welltogether.</p>
+                            <hr>
+                            <h3>Engaging and exciting narrative</h3>
+                            <p class="regtext">A large part of the narrative of Phoenix One lies in the
+                                narrative
+                                collectibles
+                                that lie around on each level, which include captain logs, research journals
+                                and
+                                miscellaneous findings.</p>
+                            <p class="regtext">In the collectible narrative pieces, I made sure to
+                                accentuate each
+                                character's
+                                personality, quirks and mannerisms and convey the relationship they had with
+                                other major characters or events in the plotline through their eyes, such as
+                                Dr
+                                Aspen being very inquisitive, committed, yet slightly more reserved and
+                                quiet
+                                when compared to the bold, confident leader that is the Captain. With the
+                                miscellaneous, I elected for the direction of making them world-building
+                                material to create a stronger image for the player of how life was like
+                                onboard
+                                the Phoenix One for the rest of the crew. </p>
+                            <hr>
                         </div>
-                    </li>
-                </ul>
-            </section>
+                        <div id="contribution-media">
+                            <video src="video/P1 movement demo vid.webm" controls autoplay loop muted
+                                class="cmedia">Your browser does not support the video tag</video>
+                            <video src="video/P1 levels demo video.webm" controls autoplay loop muted
+                                class="cmedia">Your browser does not support the video tag</video>
+                            <video src="video/P1 Narrative demo .webm" controls autoplay loop muted class="cmedia">Your
+                                browser does not support the video tag</video>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
         </section>
     </main>
 </body>

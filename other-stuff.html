@@ -16,8 +16,8 @@
             });
 
             $('.dropdown-content').hide();
-            $('#link2').on('click', function(){
-                if($('#link2').hasClass('pressed')){
+            $('#link2').on('click', function () {
+                if ($('#link2').hasClass('pressed')) {
                     $('.dropdown-content').hide();
                     $('#link2').removeClass('pressed');
                 } else {
@@ -26,11 +26,11 @@
                 }
             });
 
-            $('#topnavigation').on('mouseleave', function(){
+            $('#topnavigation').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
-            $('.dropdown-content').on('mouseleave', function(){
+            $('.dropdown-content').on('mouseleave', function () {
                 $('.dropdown-content').hide();
                 $('#link2').removeClass('pressed');
             });
@@ -42,13 +42,13 @@
                 $('#putext h3').css('color', 'black');
                 $('#putext p').css('color', 'black');
                 $('#p1').text("This was the first 3D Project that I managed to finish completely. Unfortunately, due to this being made a very long time ago, I don't remember much of the modelling process, nor do I have any other actual renders other than the first image due to the materials going missing, but I do know that the 2014 Macbook Pro I was using was on its hands and knees trying to render it, which may explain the grainy-ness of the picture.");
-                $('#img1').attr({"style":"background-image: url(/images/mountains.webp);","title":"The final render of the mountains, complete with rocky faces, 3 tents, lots of snow and the golden-hour sun."});
-                $('#img2').attr({"style":"background-image: url(/images/mountains2.webp);","title":"A view of the amount of vertices of the mesh."});
-                $('#img3').attr({"style":"background-image: url(/images/mountains3.webp);","title":"An alternate view of the layout of the overall scene, illustrating how multiple versions of the same mesh are used in different rotations to fill out camera space."});
-                $('#img4').attr({"style":"background-image: url(/images/mountains4.webp);","title":"A view of the 3 tent models."});
-                $('#img5').attr({"style":"background-image: url(/images/mountains5.webp);","title":"A top-down view of the overal scene."});
-                $('#img6').attr({"style":"background-image: url(/images/mountains6.webp);","title":"The scene as seen from the camera."});
-                $('#img7').attr({"style":"background-image: url(/images/mountains7.webp);","title":"A view of the valley that was made via sculpting the mesh."});
+                $('#img1').attr({ "style": "background-image: url(/images/mountains.webp);", "title": "The final render of the mountains, complete with rocky faces, 3 tents, lots of snow and the golden-hour sun." });
+                $('#img2').attr({ "style": "background-image: url(/images/mountains2.webp);", "title": "A view of the amount of vertices of the mesh." });
+                $('#img3').attr({ "style": "background-image: url(/images/mountains3.webp);", "title": "An alternate view of the layout of the overall scene, illustrating how multiple versions of the same mesh are used in different rotations to fill out camera space." });
+                $('#img4').attr({ "style": "background-image: url(/images/mountains4.webp);", "title": "A view of the 3 tent models." });
+                $('#img5').attr({ "style": "background-image: url(/images/mountains5.webp);", "title": "A top-down view of the overal scene." });
+                $('#img6').attr({ "style": "background-image: url(/images/mountains6.webp);", "title": "The scene as seen from the camera." });
+                $('#img7').attr({ "style": "background-image: url(/images/mountains7.webp);", "title": "A view of the valley that was made via sculpting the mesh." });
             });
 
             $('#li2').click(function () {
@@ -58,12 +58,12 @@
                 $('#p1').text("My first experiment with randomly-generating terrain combined with an interest in the vaporwave aesthetic resulted in this scene, which was also done on my old Macbook Pro. Outside of this picture I also turned this into an animation using by turning the generated mesh into an array and then just moving the camera though everything, and then resetting the camera back to its original point when it got to the end of the array so it looked infinite.");
                 $('.gvideo').attr("src", "video/vaporwave.webm");
                 $('.gvideo').show();
-                $('#img2').attr({"style":"background-image: url(/images/vaporwave2.webp);", "title":"The rendered scene from the camera's viewport, complete with the retro orange sun in the background and the neon-blue wireframe-like jagged mesh surrounding on both sides."});
-                $('#img3').attr({"style":"background-image: url(/images/vaporwave3.webp);", "title":"A different angle of the rendered scene."});
-                $('#img4').attr({"style":"background-image: url(/images/vaporwave4.webp);", "title":"Another angle showing just the models, highlighting the length of the recurring wireframe and the size and position of the sun mesh."});
-                $('#img5').attr({"style":"background-image: url(/images/vaporwave5.webp);", "title":"A top-down view to again show the length of the wireframe mesh and position of the sun mesh."});
-                $('#img6').attr({"style":"background-image: url(/images/vaporwave6.webp);", "title":"Another view from the camera's perspective."});
-                $('#img7').attr({"style":"background-image: url(/images/vaporwave7.webp);", "title":"A wireframe view of the entire scene."});
+                $('#img2').attr({ "style": "background-image: url(/images/vaporwave2.webp);", "title": "The rendered scene from the camera's viewport, complete with the retro orange sun in the background and the neon-blue wireframe-like jagged mesh surrounding on both sides." });
+                $('#img3').attr({ "style": "background-image: url(/images/vaporwave3.webp);", "title": "A different angle of the rendered scene." });
+                $('#img4').attr({ "style": "background-image: url(/images/vaporwave4.webp);", "title": "Another angle showing just the models, highlighting the length of the recurring wireframe and the size and position of the sun mesh." });
+                $('#img5').attr({ "style": "background-image: url(/images/vaporwave5.webp);", "title": "A top-down view to again show the length of the wireframe mesh and position of the sun mesh." });
+                $('#img6').attr({ "style": "background-image: url(/images/vaporwave6.webp);", "title": "Another view from the camera's perspective." });
+                $('#img7').attr({ "style": "background-image: url(/images/vaporwave7.webp);", "title": "A wireframe view of the entire scene." });
 
             });
 
@@ -72,13 +72,13 @@
                 $('#putext').css('background-color', 'rgb(59, 58, 58)');
                 $('#puimages').css('background-color', 'rgb(20, 19, 19)');
                 $('#p1').text("As my role in L Stands for Winner has gradually shifted to doing more 3D art, I decided that I needed to practice with Blender more after being away from it for a while, and this was the first thing I made, mainly because I just looked around my room and saw it sitting on the edge of my desk and thought it would be a good start. Nothing too complicated but it was fun modelling practice.");
-                $('#img1').attr({"style":"background-image: url(/images/wiiu.webp);", "title":"The final rendered image of the Wii U, complete with power and eject lights."});
-                $('#img2').attr({"style":"background-image: url(/images/wiiu2.webp);", "title":"A frontal view of the model, highlighting the disc drive and buttons."});
-                $('#img3').attr({"style":"background-image: url(/images/wiiu3.webp);", "title":"A side-on view, highlighting the ventilation areas and vertical stands."});
-                $('#img4').attr({"style":"background-image: url(/images/wiiu4.webp);", "title":"A rear view of the model."});
-                $('#img5').attr({"style":"background-image: url(/images/wiiu5.webp);", "title":"Another rear view of the model in material view highlighting the glossy/reflective aspects of the model's texture."});
-                $('#img6').attr({"style":"background-image: url(/images/wiiu6.webp);", "title":"A close frontal view of the model."});
-                $('#img7').attr({"style":"background-image: url(/images/wiiu7.webp);", "title":"A frontal view of the model in material view to highlight the emmisive button lights."});
+                $('#img1').attr({ "style": "background-image: url(/images/wiiu.webp);", "title": "The final rendered image of the Wii U, complete with power and eject lights." });
+                $('#img2').attr({ "style": "background-image: url(/images/wiiu2.webp);", "title": "A frontal view of the model, highlighting the disc drive and buttons." });
+                $('#img3').attr({ "style": "background-image: url(/images/wiiu3.webp);", "title": "A side-on view, highlighting the ventilation areas and vertical stands." });
+                $('#img4').attr({ "style": "background-image: url(/images/wiiu4.webp);", "title": "A rear view of the model." });
+                $('#img5').attr({ "style": "background-image: url(/images/wiiu5.webp);", "title": "Another rear view of the model in material view highlighting the glossy/reflective aspects of the model's texture." });
+                $('#img6').attr({ "style": "background-image: url(/images/wiiu6.webp);", "title": "A close frontal view of the model." });
+                $('#img7').attr({ "style": "background-image: url(/images/wiiu7.webp);", "title": "A frontal view of the model in material view to highlight the emmisive button lights." });
 
             });
 
@@ -87,13 +87,13 @@
                 $('#putext').css('background-color', 'rgb(86, 80, 68)');
                 $('#puimages').css('background-color', 'rgb(31, 22, 8)');
                 $('#p1').text("A lot of this was made while following a tutorial, but it was still good practice nonetheless. This small project involved a lot of experimentation with modifiers, such as array, mirror, skin, etc, and was also my first time trying out reflective/see-through textures and a return to global lighting for the first time in a while.");
-                $('#img1').attr({"style":"background-image: url(images/trainstation.webp);", "title":"The final render of the model, complete with an isometric view of the train and platform, benches, escalator with see-through railings, vending machines and reflective windows on the train."});
-                $('#img2').attr({"style":"background-image: url(images/trainstation2.webp);", "title":"A model-view of the scene, highlighting detail and the positions of the cone lights."});
-                $('#img3').attr({"style":"background-image: url(images/trainstation3.webp);", "title":"A frontal view of the model."});
-                $('#img4').attr({"style":"background-image: url(images/trainstation4.webp);", "title":"A top-down view of the model."});
-                $('#img5').attr({"style":"background-image: url(images/trainstation5.webp);", "title":"A view of the model in material view to highlight the simple colours used for the model."});
-                $('#img6').attr({"style":"background-image: url(images/trainstation6.webp);", "title":"A rendered view of the model that highlights the use of a HDRI of a train station for better global lighting."});
-                $('#img7').attr({"style":"background-image: url(images/trainstation7.webp);", "title":"A view of the model in wireframe view to highlight the faces and vertices."});
+                $('#img1').attr({ "style": "background-image: url(images/trainstation.webp);", "title": "The final render of the model, complete with an isometric view of the train and platform, benches, escalator with see-through railings, vending machines and reflective windows on the train." });
+                $('#img2').attr({ "style": "background-image: url(images/trainstation2.webp);", "title": "A model-view of the scene, highlighting detail and the positions of the cone lights." });
+                $('#img3').attr({ "style": "background-image: url(images/trainstation3.webp);", "title": "A frontal view of the model." });
+                $('#img4').attr({ "style": "background-image: url(images/trainstation4.webp);", "title": "A top-down view of the model." });
+                $('#img5').attr({ "style": "background-image: url(images/trainstation5.webp);", "title": "A view of the model in material view to highlight the simple colours used for the model." });
+                $('#img6').attr({ "style": "background-image: url(images/trainstation6.webp);", "title": "A rendered view of the model that highlights the use of a HDRI of a train station for better global lighting." });
+                $('#img7').attr({ "style": "background-image: url(images/trainstation7.webp);", "title": "A view of the model in wireframe view to highlight the faces and vertices." });
 
             });
 
@@ -105,12 +105,12 @@
                 $('#p2').text("It was my first time really trying to get to grips with Blender's animation tab, which included everything from the dope sheet to the action tab to the graph editor as I tried to make the propellor on the Cube have a start-animation before going into the looping spinning animation, which I ultimately couldn't figure out and will probably tackle some other time, but the looping propellor spin was good enough, and the movement and turning of the cube turned out to be pretty straightforward.");
                 $('.gvideo').attr("src", "video/cube.webm");
                 $('.gvideo').show();
-                $('#img7').attr({"style":"background-image: url(images/cubepic1.webp);", "title":"A view of Blender's video editor detailing the composition of the animation using individual images."});
-                $('#img3').attr({"style":"background-image: url(images/cubepic2.webp);", "title":"A basic model view of the scene."});
-                $('#img4').attr({"style":"background-image: url(images/cubepic3.webp);", "title":"A wireframe view of the scene."});
-                $('#img5').attr({"style":"background-image: url(images/cubepic4.webp);", "title":"A close-up model view detailing the use of cell fracture on one of the boxes."});
-                $('#img2').attr({"style":"background-image: url(images/cubepic5.webp);", "title":"A basic rendered view of the scene showing the blue cube with its grey propellor, the orange ramp and multiple white boxes for it to push around."});
-                $('#img6').attr({"style":"background-image: url(images/cubepic6.webp);", "title":"A view of the dope sheet of the animation detailing the keyframes used for the cube's movement around the scene."});
+                $('#img7').attr({ "style": "background-image: url(images/cubepic1.webp);", "title": "A view of Blender's video editor detailing the composition of the animation using individual images." });
+                $('#img3').attr({ "style": "background-image: url(images/cubepic2.webp);", "title": "A basic model view of the scene." });
+                $('#img4').attr({ "style": "background-image: url(images/cubepic3.webp);", "title": "A wireframe view of the scene." });
+                $('#img5').attr({ "style": "background-image: url(images/cubepic4.webp);", "title": "A close-up model view detailing the use of cell fracture on one of the boxes." });
+                $('#img2').attr({ "style": "background-image: url(images/cubepic5.webp);", "title": "A basic rendered view of the scene showing the blue cube with its grey propellor, the orange ramp and multiple white boxes for it to push around." });
+                $('#img6').attr({ "style": "background-image: url(images/cubepic6.webp);", "title": "A view of the dope sheet of the animation detailing the keyframes used for the cube's movement around the scene." });
             });
 
             $('#li6').click(function () {
@@ -122,12 +122,12 @@
                 $('#p2').text("Funnily enough, this project was only supposed to be the board itself, but after finishing it, I thought it would be nice to give it its own scene to make the whole render look better, and so that's where the rest of the station and the grey morning sky comes from. While I couldn't completely replicate it, the scene is based on a real station that exists somewhere!");
                 $('.gvideo').attr("src", "video/board.webm");
                 $('.gvideo').show();
-                $('#img2').attr({"style":"background-image: url(images/board1.webp);", "title":"A view of the geometry node setup used to generate the grid of small spheres used for the dot matrix."});
-                $('#img3').attr({"style":"background-image: url(images/board2.webp);", "title":"An image highlighting the finished node setup and the use of 4 instances to fill out the spaces in the main board."});
-                $('#img4').attr({"style":"background-image: url(images/board3.webp);", "title":"A view of the finished board (in modelling terms) and the beginnings of the station scene around it, featuring a roof, roof support and board attachment to the roof support."});
-                $('#img5').attr({"style":"background-image: url(images/board4.webp);", "title":"A view of the dope sheet of the animation of the text scrolling across the middle display of the board."});
-                $('#img6').attr({"style":"background-image: url(images/board5.webp);", "title":"A different view of the station scene, this time illustrating the additions such as windows, basic spotlights, more roof supports, rain pipes, extra signs and metal tube roof supports in a x shape."});
-                $('#img7').attr({"style":"background-image: url(images/board6.webp);", "title":"A final cycles render of the scene."});
+                $('#img2').attr({ "style": "background-image: url(images/board1.webp);", "title": "A view of the geometry node setup used to generate the grid of small spheres used for the dot matrix." });
+                $('#img3').attr({ "style": "background-image: url(images/board2.webp);", "title": "An image highlighting the finished node setup and the use of 4 instances to fill out the spaces in the main board." });
+                $('#img4').attr({ "style": "background-image: url(images/board3.webp);", "title": "A view of the finished board (in modelling terms) and the beginnings of the station scene around it, featuring a roof, roof support and board attachment to the roof support." });
+                $('#img5').attr({ "style": "background-image: url(images/board4.webp);", "title": "A view of the dope sheet of the animation of the text scrolling across the middle display of the board." });
+                $('#img6').attr({ "style": "background-image: url(images/board5.webp);", "title": "A different view of the station scene, this time illustrating the additions such as windows, basic spotlights, more roof supports, rain pipes, extra signs and metal tube roof supports in a x shape." });
+                $('#img7').attr({ "style": "background-image: url(images/board6.webp);", "title": "A final cycles render of the scene." });
             });
 
             $('#li7').click(function () {
@@ -138,13 +138,13 @@
                 $('#puimages').css('background-color', 'rgb(52, 70, 116)');
                 $('#p1').text("My first genuine games project was this one that I made for my Year 12 HSC Multimedia Major Work. It was a toss-up between this and a film-based project, but since I wanted to try out coding something big for the first time, which on relfection was a stupid idea given the time-frame and scale, I settled on the game project. It eventually turned into a game similar to pilotwings on the SNES, where the player flies around a stage passing through a course of rings to get to the finish.");
                 $('#p2').text("All the coding and 3D assets were done by myself, which I still think was a massive achievement, even if I had to keep lighting to a minimum and the modelling style as low-poly due to the constraints of my laptop, which I still think has nightmares about this whole thing.");
-                $('#img1').attr({"style":"background-image: url(images/ttrtitle.webp);", "title":"The title screen of the game, illustrating the plane flying through one of the rings with a cloudy blue sky and a floating island in the background"});
-                $('#img2').attr({"style":"background-image: url(images/ttrgame.webp);", "title":"An in-game screenshot of the plane flying through a ring, illustrating the UI of the game complete with a throttle meter, attitude meter, rings cleared, timer and score."});
-                $('#img3').attr({"style":"background-image: url(images/fl1.webp);", "title":"A render of the floating island used in the first level, with low-poly mountain parts, grassy hill, trees, river and waterfall."});
-                $('#img4').attr({"style":"background-image: url(images/fl2.webp);", "title":"A render of the floating island used in the second level, with low-poly mountain peaks, bridge, grassy area and trees."});
-                $('#img5').attr({"style":"background-image: url(images/fl4.webp);", "title":"A render of the floating island used in the fourth level, being the second level with added features obstacles such as torches, more trees and multiple hot-air balloons."});
-                $('#img6').attr({"style":"background-image: url(images/fl5.webp);", "title":"A render of the floating island used in the final level, being the first level with added features obstacles such as a bridge over the river, lighthouse, windmill, campfire and houses."});
-                $('#img7').attr({"style":"background-image: url(images/plane.webp);", "title":"A render of the plane that the player controls during the game. Its model shape and its white, orange and blue colour scheme was inspired from Dusty from the Planes movie."});
+                $('#img1').attr({ "style": "background-image: url(images/ttrtitle.webp);", "title": "The title screen of the game, illustrating the plane flying through one of the rings with a cloudy blue sky and a floating island in the background" });
+                $('#img2').attr({ "style": "background-image: url(images/ttrgame.webp);", "title": "An in-game screenshot of the plane flying through a ring, illustrating the UI of the game complete with a throttle meter, attitude meter, rings cleared, timer and score." });
+                $('#img3').attr({ "style": "background-image: url(images/fl1.webp);", "title": "A render of the floating island used in the first level, with low-poly mountain parts, grassy hill, trees, river and waterfall." });
+                $('#img4').attr({ "style": "background-image: url(images/fl2.webp);", "title": "A render of the floating island used in the second level, with low-poly mountain peaks, bridge, grassy area and trees." });
+                $('#img5').attr({ "style": "background-image: url(images/fl4.webp);", "title": "A render of the floating island used in the fourth level, being the second level with added features obstacles such as torches, more trees and multiple hot-air balloons." });
+                $('#img6').attr({ "style": "background-image: url(images/fl5.webp);", "title": "A render of the floating island used in the final level, being the first level with added features obstacles such as a bridge over the river, lighthouse, windmill, campfire and houses." });
+                $('#img7').attr({ "style": "background-image: url(images/plane.webp);", "title": "A render of the plane that the player controls during the game. Its model shape and its white, orange and blue colour scheme was inspired from Dusty from the Planes movie." });
             });
 
             $('#popupdesc span').click(function () {
@@ -171,9 +171,11 @@
                 <li class="navitem"><a id="link" href="other-stuff.html">Other Stuff</a></li>
                 <li class="navitem" id="dropdown"><a id="link2">Contact</a>
                     <div class="dropdown-content">
-                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/" target="_blank">LinkedIn</a>
-                        <a class="dropdown-links" href="https://github.com/IsaacJ46591168" target="_blank">GitHub</a>
-                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social" target="_blank">Bluesky</a>
+                        <a class="dropdown-links" href="https://www.linkedin.com/in/isaac-james-932553297/"
+                            target="_blank">LinkedIn</a>
+                        <a class="dropdown-links" href="https://github.com/ijames458" target="_blank">GitHub</a>
+                        <a class="dropdown-links" href="https://bsky.app/profile/squidcicle12.bsky.social"
+                            target="_blank">Bluesky</a>
                         <a class="dropdown-links" href="mailto:isaacjames4580@gmail.com?Subject=Hello%20User">Email</a>
                     </div>
                 </li>
@@ -252,8 +254,8 @@
             <div id="puimages">
                 <h3>Gallery</h3>
                 <div class="gimage" id="img1">
-                    <video controls autoplay loop
-                        muted class="gvideo">Your browser does not support the video tag</video>
+                    <video controls autoplay loop muted class="gvideo">Your browser does not support the video
+                        tag</video>
                 </div>
                 <div class="gimage" id="img2"></div>
                 <div class="gimage" id="img3"></div>
